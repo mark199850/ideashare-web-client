@@ -1,32 +1,99 @@
-.App {
-  text-align: center;
+.lets-go-arrow {
+  margin-left: 10px;
+  padding-right: 5px;
+  padding-left: 0px;
+  float: right;
+  text-align: right;
+}
+.lets-go-btn .lets-go-arrow {
+  transition: padding-right 0.2s, padding-left 0.2s;
+
+}
+.lets-go-btn:hover .lets-go-arrow {
+  padding-right: 0px;
+  padding-left: 5px;
+
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.carouselImg{
+  /*filter: brightness(90%);*/
+  object-fit: 'cover';
+  object-position: 'center';
+}
+.carousel-caption {
+  top: 0;
+  bottom: auto;
+}
+.errordiv{
+  height: 60px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.fit{
+  width: fit-content; 
+  /* To adjust the height as well */ 
+  height: fit-content;
+}
+
+.navbar {
   color: white;
-}
+  background-color: rgba(0,0,0,0.85);
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.5);
+ }
 
-.App-link {
-  color: #61dafb;
+.modalHeaderShadow {
+ background-color: rgba(0,0,0,0.85);
+ box-shadow: 0px 2px 5px rgba(0,0,0,0.5);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.modal-header { /*bootstrap modaldefault classname*/
+  border: none !important;
+}
+.btn-close {
+  color: white !important;
+}
+.table-responsive thead th{
+  background-color: rgba(0,0,0,0.85);/*#0d6efd;*/
+  color: white;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+td img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30vh;
+  
+}
+td {
+  
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+   
+}
+.td-none{
+  display:none ;
+  
+}
+@media screen and (max-width: 990px) {
+  .table-responsive td {
+      display: block;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
   }
-  to {
-    transform: rotate(360deg);
+  td img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50vh;
+    
+  }
+  .none {
+    display:none ;
+  }
+  .td-none{
+    font-weight: bold;
+    
   }
 }
